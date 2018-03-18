@@ -23,6 +23,7 @@ class Info extends Component {
 }
 
   render(){
+    let info = this.state.info;
     return (
      <div>
        <a href="/"><Header /></a>
@@ -32,8 +33,9 @@ class Info extends Component {
              Event Details
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
-             {this.state.info.short_name}
-             <span>{this.state.info.start_date}</span>
+             {info.name}
+              <span class="badge badge-success">{info.state}</span>
+             <span>{info.start_date}</span>
             </li>
           </ul>
         </div>

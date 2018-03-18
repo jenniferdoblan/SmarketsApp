@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router';
+import Info from './components/Info';
+import Home from './templates/Home';
 import './App.css';
+import './index.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src="https://smarkets.com/static/img/smarkets-logo.svg" className="App-logo" alt="logo" />
-        </header>
-      </div>
+      <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/event/:event_id' component={Info}/>
+      </Switch>
     );
   }
 }

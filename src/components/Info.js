@@ -34,8 +34,8 @@ class Info extends Component {
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
              {info.name}
-              <span class="badge badge-success">{info.state}</span>
-             <span>{info.start_date}</span>
+              <span className="badge badge-success">{info.state}</span>
+             <span className="badge badge-default">{info.start_date}</span>
             </li>
           </ul>
         </div>

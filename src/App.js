@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router';
 import Info from './components/Info';
 import Home from './templates/Home';
 import './App.css';
-import './index.css';
 
 class App extends Component {
   render() {

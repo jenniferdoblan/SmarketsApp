@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-color: #000;
+}
+
 .App {
   text-align: center;
 }
@@ -11,14 +17,6 @@
   height: 70px;
   padding: 15px;
   color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 .Event-container {

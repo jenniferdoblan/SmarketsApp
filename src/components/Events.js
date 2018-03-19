@@ -24,7 +24,7 @@ class Events extends Component {
     return (
       <div className="Event-container">
          <ul className="list-group">
-           {popular_events.map(current =>
+           {popular_events.map(current => //iterates through popular events
             <a key={current.id} href= {'/event/' + current.id} className="list-group-item list-group-item-action">{current.name}</a>
            )}
          </ul>

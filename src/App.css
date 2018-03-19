@@ -21,13 +21,16 @@
   font-size: large;
 }
 
-.App-container {
+.Event-container {
   font-family: 'Open Sans', sans-serif;
-  /* color: #00b073; */
   font-size: 1.10rem;
   font-weight: 600;
-  width: 60%;
+  width: 35%;
   margin: 70px auto;
   box-shadow: 0 4px 0px #333;
   border-radius: 15px;
+}
+
+.Event-container-width {
+  width: 60%;
 }

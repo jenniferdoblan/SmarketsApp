@@ -22,7 +22,7 @@ class Events extends Component {
   render(){
     var popular_events = this.state.popular_events;
     return (
-      <div className="App-container">
+      <div className="Event-container">
          <ul className="list-group">
            {popular_events.map(current =>
             <a key={current.id} href= {'/event/' + current.id} className="list-group-item list-group-item-action">{current.name}</a>

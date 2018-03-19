@@ -29,13 +29,27 @@ class Info extends Component {
        <a href="/"><Header /></a>
        <div className="App-container">
           <ul className="list-group">
-            <li className="list-group-item list-group-item-action">
-             Event Details
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              <div class="col-sm-6">
+               <span>Event Details</span>
+              </div>
+              <div class="col-sm-3">
+               <span>Status</span>
+               </div>
+               <div class="col-sm-3">
+              <span>Date</span>
+              </div>
             </li>
             <li className="list-group-item d-flex justify-content-between align-items-center">
-             {info.name}
-              <span className="badge badge-success">{info.state}</span>
-             <span className="badge badge-default">{info.start_date}</span>
+              <div className="col-sm-6">
+                <span >{info.name}</span>
+              </div>
+              <div className="col-sm-3">
+                <span className="badge badge-success">{info.state}</span>
+              </div>
+              <div className="col-sm-3">
+                <span className="badge badge-default">{info.start_date}</span>
+              </div>
             </li>
           </ul>
         </div>
